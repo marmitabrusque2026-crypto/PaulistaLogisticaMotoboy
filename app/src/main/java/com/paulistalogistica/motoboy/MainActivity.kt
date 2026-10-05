@@ -29,6 +29,9 @@ class MainActivity : ComponentActivity() {
         webView.loadUrl("https://logistica-paulista.web.app/motoboy/")
 
         setContentView(webView)
+
+        // Verifica se existe uma nova versão do aplicativo
+        UpdateManager.verificar(this)
     }
 
     override fun onBackPressed() {
